@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Julius+Sans+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: #fefefe;
+	font-family: 'Archivo Narrow', sans-serif;
+	margin-bottom: 50px;
+}
+
+.container {
+	width: 1200px;
+	margin: auto;
+	max-width: 100%;
+}
+
+h1 {
+	text-align: center;
+}
+
+h2 {
+	position: relative;
+}
+
+h2::after {
+	content: '';
+	background-color: #000;
+	border-radius: 10px;
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+	height: 4px;
+	width: 70px;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+}
+ul li {
+  background-color: #fff;
+  box-shadow: 0 4px 40px 0px rgba(0, 0, 0, .15);
+  list-style: none;
+  margin: 20px;
+  width: 350px;
+  font-family: 'Julius Sans One', sans-serif;
+}
+ul li a {
+  color: #000;
+  text-decoration: none;
+}
+ul li img {
+  display: block;
+  object-fit: cover;
+  margin-bottom: 15px;
+  transition: transform .3s ease;
+  height: 200px;
+  width: 350px;
+}
+ul li p {
+  font-weight: bold;
+  padding: 0 15px;
+  text-transform: capitalize;
+}
+.links-container {
+  padding: 15px;
+  margin-top: 15px;
+}
+.links-container a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: #fff;
+  margin-right: 5px;
+  height: 35px;
+  width: 35px;
+  transition: transform .1s ease;
+}
+.links-container a.preview {
+  background-color: #34a0e9;
+}
+.links-container a.git-link {
+  background-color: #000;
+}
+.links-container a:hover {
+  transform: scale(1.1);
+}
+@media (max-width: 400px) {
+  ul li {
+    width: auto;
+  }
+  ul li img {
+    display: block;
+    object-fit: cover;
+    margin-bottom: 15px;
+    transition: transform .3s ease;
+    width: 100%;
+  }
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  width: 100%;
+  color: #fff;
+  z-index: 2;
+  text-align: center;
+}
+footer span {
+  font-size: 1.1rem;
+  font-family: 'Shadows Into Light', cursive;
+}
